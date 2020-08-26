@@ -6,7 +6,9 @@ namespace Automapper.HelloWorld
     {
         public DefaultProfile()
         {
-            CreateMap<A, B>();
+            CreateMap<A, B>()
+                .ForMember(dest => dest.Y, opt => opt.MapFrom(src => src.X))
+                .ForMember(dest => dest.NotMapped, opt => opt.Ignore());
         }
     }
 }
