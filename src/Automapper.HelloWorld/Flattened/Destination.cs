@@ -1,6 +1,6 @@
-﻿namespace Automapper.HelloWorld
+﻿namespace Automapper.HelloWorld.Flattened
 {
-    public class B
+    public class Destination
     {
         public int I;
         public string ToName;

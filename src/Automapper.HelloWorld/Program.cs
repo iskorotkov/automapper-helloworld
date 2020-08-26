@@ -1,5 +1,6 @@
 ﻿using System;
 using AutoMapper;
+using Automapper.HelloWorld.Flattened;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Automapper.HelloWorld
@@ -25,8 +26,8 @@ namespace Automapper.HelloWorld
         private static void RunApp(IServiceProvider provider)
         {
             var mapper = provider.GetRequiredService<IMapper>();
-            var a = new A();
-            var b = mapper.Map<B>(a);
+            var a = new Source();
+            var b = mapper.Map<Destination>(a);
         }
     }
 }

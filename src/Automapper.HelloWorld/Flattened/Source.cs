@@ -1,6 +1,6 @@
-﻿namespace Automapper.HelloWorld
+﻿namespace Automapper.HelloWorld.Flattened
 {
-    public class A
+    public class Source
     {
         public int I = 1;
         public string FromName = "From name -> to name";
